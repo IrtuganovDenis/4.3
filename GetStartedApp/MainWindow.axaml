@@ -1,0 +1,86 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+		d:DesignWidth="800"
+		d:DesignHeight="450"
+        x:Class="GetStartedApp.MainWindow"
+        Title="GetStartedApp">
+	<Grid 
+		ShowGridLines="True"
+		RowDefinitions = "40, *"
+		ColumnDefinitions = "1500, *">
+		
+		<DockPanel Grid.Row="0" Grid.ColumnSpan="2">
+			<TextBlock Margin="15 10">Home</TextBlock>
+			<TextBlock Margin="15 10">About</TextBlock>
+			<TextBlock Margin="15 10">Blog's Main Topic 1</TextBlock>
+			<TextBlock Margin="15 10">Blog's Main Topic 1</TextBlock>
+			<TextBlock Margin="15 10">Blog's Main Topic 1</TextBlock>
+			<TextBlock Margin="15 10">Associated blocks</TextBlock>
+			<TextBlock Margin="10 10 10 10" TextAlignment="Right">RSS</TextBlock>
+		</DockPanel>
+
+		<TextBlock Grid.Row = "1" Grid.Column="0" TextWrapping="Wrap" Margin="10 10 10 10">
+			Article 1 <LineBreak/><LineBreak/>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id tortor a ex rutrum ornare. Nulla sem est, commodo at dolor a, pulvinar tempor ipsum. Sed pellentesque aliquet efficitur. Donec placerat vehicula dignissim. Suspendisse dapibus turpis ut commodo egestas. Mauris vehicula odio sed hendrerit maximus. Mauris condimentum, elit ut laoreet gravida, ipsum tellus aliquet massa, at mollis lacus leo nec sem. Aenean ac libero dolor.
+			Fusce fermentum fermentum tincidunt. Mauris tincidunt est nec magna pretium, ac aliquam lacus commodo. Praesent hendrerit euismod neque, eget mollis dolor sagittis vel. Phasellus tortor augue, ullamcorper eu augue in, sagittis congue tellus. Sed sollicitudin porta porta. Vivamus luctus, dolor vitae varius elementum, ipsum nunc commodo nibh, eget ultricies dolor urna sed quam. Orci varius natoque penatibus et magnis dis parturient montes, 
+			nascetur ridiculus mus. Nulla facilisi. Aliquam scelerisque cursus semper. Vivamus odio magna, mollis eget consectetur euismod, posuere ac sapien. Nam a maximus ligula, non dapibus nulla. Sed quis ligula dui. Vivamus convallis et metus congue scelerisque. Praesent egestas ex nec metus ultrices facilisis id vel ligula. In et interdum orci. Mauris pretium pulvinar est, vel faucibus quam pretium quis.
+		</TextBlock>
+
+		<Image
+			Source="C:\Users\d_irt\source\repos\ConsoleApp20\GetStartedApp\Assets\photo.jpg"
+			Grid.Row="1"
+			Grid.Column="0"
+			Margin="10 50"
+			VerticalAlignment="Bottom"
+			MaxHeight="700"
+			MaxWidth="700">
+		</Image>
+
+		<DockPanel
+			VerticalAlignment="Bottom"
+			Grid.Row="1"
+			Grid.Column="0">
+			
+			<TextBlock Margin="10"> Tags: Tag1 Tag2 Tag3 Tag4 </TextBlock>
+			<TextBlock Margin="10" TextAlignment="Right"> Rate this article 4/5 </TextBlock>
+			
+		</DockPanel>
+
+		<StackPanel
+			Grid.Row="1"
+			Grid.Column="1">
+			
+			
+			<TextBlock Margin="10" TextWrapping="Wrap">
+				<LineBreak/><LineBreak/>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra augue justo, sed convallis odio bibendum sed. Phasellus finibus sit amet est ac tempus.
+				Praesent efficitur arcu sed tristique fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo, leo vel tempor ullamcorper, elit ante ultrices tortor, eget venenatis eros odio sit amet eros...
+			</TextBlock>
+			
+			<TextBlock Margin="0 0 10 0" TextDecorations="Underline" TextAlignment="Right">
+				More
+			</TextBlock>
+			<TextBlock Margin="0 0 10 0" TextAlignment="Right">
+				Yesterday
+			</TextBlock>
+
+			
+			<TextBlock Margin="10" TextWrapping="Wrap">
+				<LineBreak/><LineBreak/>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra augue justo, sed convallis odio bibendum sed. Phasellus finibus sit amet est ac tempus.
+				Praesent efficitur arcu sed tristique fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo, leo vel tempor ullamcorper, elit ante ultrices tortor, eget venenatis eros odio sit amet eros...
+			</TextBlock>
+
+			<TextBlock Margin="0 0 10 0" TextDecorations="Underline" TextAlignment="Right">
+				More
+			</TextBlock>
+			<TextBlock Margin="0 0 10 0" TextAlignment="Right">
+				1 week ago
+			</TextBlock>
+			
+		</StackPanel>
+	</Grid>
+</Window>
